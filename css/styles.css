@@ -761,10 +761,15 @@ address {
   top: 50%;
   left: 50%;
   width: 528px;
-  height: 581px;
+  min-height: 581px;
   padding: 40px;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 1);
+}
+.modal-close-btn-icon {
+  position: relative;
+  top: 1px;
+  left: 0px;
 }
 
 .modal-close-btn {
