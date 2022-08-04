@@ -341,6 +341,11 @@ address {
   padding-bottom: 60px;
 }
 
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .container-logo {
   margin-bottom: 20px;
 }
