@@ -284,6 +284,8 @@ body {
   background-color: var(--accent-color-white);
   width: 370px;
   height: 404px;
+
+  transition: 250ms;
 }
 
 .tex-footer:hover {
@@ -402,11 +404,14 @@ address {
 }
 
 .sotial-title_footer {
-  color: rgba(255, 255, 255, 1);
-
   font-family: Roboto, sans-serif;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 1);
 }
 
 .title-first {
@@ -492,10 +497,13 @@ address {
 
 .backdrop-h {
   color: rgba(255, 255, 255, 1);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: rgba(255, 255, 255, 1);
 }
 
 .bacdrop-place {
@@ -514,11 +522,7 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(47, 48, 58, 1);
   border-radius: 4px;
-}
-
-.email:hover,
-.email:focus {
-  background-color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .button-submit {
