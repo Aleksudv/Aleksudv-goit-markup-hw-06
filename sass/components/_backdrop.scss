@@ -75,13 +75,15 @@
     background-color: rgba(0, 0, 0, 0.2);
 
     transition: opacity 500ms linear, visibility 500ms linear;
+
+    &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+
 
 .modal {
     position: absolute;
@@ -158,12 +160,14 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     border-radius: 4px;
+
+    &:focus {
+            outline: none;
+            border-color: rgba(33, 150, 243, 1);
+        }
 }
 
-.contact-form-input:focus {
-    outline: none;
-    border-color: rgba(33, 150, 243, 1);
-}
+
 
 .contact-form-icon {
     position: absolute;
@@ -194,15 +198,15 @@
     padding: 12px 16px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(33, 33, 33, 0.2);
-    
-
     border-radius: 4px;
+
+    &:focus {
+            outline: none;
+            border-color: rgba(33, 150, 243, 1);
+        }
 }
 
-.contact-form-message:focus {
-    outline: none;
-    border-color: rgba(33, 150, 243, 1);
-}
+
 
 .contact-form-checkbox-desc {
     display: flex;
@@ -264,12 +268,14 @@
     border: none;
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+        }
 }
 
-.contact-form-submit:hover {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+
 
 .modal-button {
     display: flex;
